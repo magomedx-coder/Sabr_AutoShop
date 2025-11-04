@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <!-- Фон -->
+  <rect width="300" height="200" fill="#1A1A1A"/>
+  
+  <!-- Бутылка масла -->
+  <g transform="translate(100, 30)">
+    <!-- Корпус бутылки -->
+    <path d="M50,20 L70,20 L80,40 L80,140 L40,140 L40,40 Z" fill="#333"/>
+    
+    <!-- Этикетка -->
+    <rect x="42" y="60" width="36" height="50" fill="#FFD700"/>
+    
+    <!-- Крышка -->
+    <rect x="45" y="10" width="30" height="10" fill="#444"/>
+    
+    <!-- Текст на этикетке -->
+    <text x="60" y="85" font-family="Arial" font-size="8" font-weight="bold" text-anchor="middle" fill="#000">SABR</text>
+    <text x="60" y="95" font-family="Arial" font-size="6" text-anchor="middle" fill="#000">МАСЛО</text>
+  </g>
+  
+  <!-- Капли масла -->
+  <circle cx="130" cy="160" r="5" fill="#FFD700"/>
+  <circle cx="150" cy="170" r="3" fill="#FFD700"/>
+  <circle cx="170" cy="165" r="4" fill="#FFD700"/>
+</svg>

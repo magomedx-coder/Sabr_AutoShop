@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <!-- Фон -->
+  <rect width="300" height="200" fill="#1A1A1A"/>
+  
+  <!-- Гаечный ключ -->
+  <path d="M60,140 L120,80 L130,90 L70,150 Z" fill="#555"/>
+  <path d="M130,90 C140,80 160,80 170,90 C180,100 180,120 170,130 C160,140 140,140 130,130 Z" fill="#555"/>
+  
+  <!-- Отвертка -->
+  <rect x="180" y="60" width="10" height="80" fill="#FFD700"/>
+  <path d="M180,60 L190,60 L195,50 L175,50 Z" fill="#555"/>
+  
+  <!-- Молоток -->
+  <rect x="120" y="30" width="60" height="15" fill="#444"/>
+  <rect x="110" y="30" width="10" height="15" fill="#444"/>
+  <rect x="180" y="30" width="10" height="15" fill="#444"/>
+  <rect x="145" y="45" width="10" height="40" fill="#FFD700"/>
+  
+  <!-- Декоративные элементы -->
+  <circle cx="150" cy="170" r="15" fill="#FFD700"/>
+  <text x="150" y="175" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#1A1A1A">SABR</text>
+</svg>

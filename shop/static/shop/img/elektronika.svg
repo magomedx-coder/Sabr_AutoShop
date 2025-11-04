@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <!-- Фон -->
+  <rect width="300" height="200" fill="#1A1A1A"/>
+  
+  <!-- Устройство диагностики -->
+  <rect x="75" y="50" width="150" height="100" rx="10" ry="10" fill="#333"/>
+  
+  <!-- Экран -->
+  <rect x="90" y="60" width="120" height="60" fill="#111"/>
+  
+  <!-- Данные на экране -->
+  <polyline points="100,90 110,80 120,100 130,70 140,85 150,75 160,95 170,65 180,80 190,70 200,90" fill="none" stroke="#FFD700" stroke-width="2"/>
+  
+  <!-- Кнопки -->
+  <circle cx="110" cy="135" r="8" fill="#FFD700"/>
+  <circle cx="140" cy="135" r="8" fill="#FFD700"/>
+  <circle cx="170" cy="135" r="8" fill="#FFD700"/>
+  <circle cx="200" cy="135" r="8" fill="#FFD700"/>
+  
+  <!-- Кабель -->
+  <path d="M225,100 C240,100 250,120 250,140 C250,160 240,170 225,170" fill="none" stroke="#444" stroke-width="4"/>
+  
+  <!-- Логотип -->
+  <text x="150" y="30" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#FFD700">SABR ЭЛЕКТРОНИКА</text>
+</svg>
