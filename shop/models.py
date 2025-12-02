@@ -1,7 +1,7 @@
+from django.conf import settings
 from django.db import models
 from django.shortcuts import get_object_or_404
 from django.urls import reverse
-from django.contrib.auth.models import User
 from phonenumber_field.modelfields import PhoneNumberField
 
 
@@ -96,7 +96,7 @@ class GoodItem(models.Model):
 
 
 class Invoice(models.Model):
-    author = models.ForeignKey(User, on_delete=models.DO_NOTHING)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.DO_NOTHING)
     comment = models.CharField(max_length=250, default='Simple sale', null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 

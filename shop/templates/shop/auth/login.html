@@ -1,13 +1,19 @@
 {% extends 'shop/base.html' %}
 
-<h2>Log in</h2>
 {% block content %}
 
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-
+	
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <h2 class="mb-4">Вход</h2>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <div class="d-flex justify-content-between align-items-center mt-3">
+        <button type="submit" class="btn btn-primary">Войти</button>
+        <a href="{% url 'password_reset' %}">Забыли пароль?</a>
+      </div>
+    </form>
+  </div>
+</div>
 {% endblock %}

@@ -10,5 +10,6 @@ urlpatterns = [
     path('', include(router.urls)),
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.authtoken')),
+    path('auth/', include('djoser.urls.jwt')),
     path('auth_rest/', include('rest_framework.urls', namespace='rest_framework')),
 ]
