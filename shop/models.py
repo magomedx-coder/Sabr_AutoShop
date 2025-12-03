@@ -40,6 +40,62 @@ class Country(models.Model):
 
     def __str__(self):
         return self.name
+    
+
+
+class Category(models.Model):
+    name = models.CharField(max_lenght=80)
+    description = models.TextField(blank=True, null=True)
+
+    class Meta:
+        verbose_name = "Категория"
+        verbose_name_plural = 'Категории'
+
+    
+        def __str__(self):
+            return self.name
+        
+
+class Brand(models.Models):
+    name = models.CharField(max_length=80)
+    desctiption = models.TextField(blank=True, null=True)
+
+
+    class Meta:
+        verbose_name = 'Производитель'
+        verbose_name_plural = 'Производители'
+
+    def __str__(self):
+        return self.name
+    
+
+
+class CarBrand(models.Model):
+    name = models.CharField(max_length=80)
+    car_brand = models.ForeignKey('CarBrand', on_delete=models.CASCADE, related_name='models')
+
+    class Meta:
+        verbose_name = 'Модель автомобиля'
+        verbose_name_plural = 'Модели автомобилей'
+
+
+    def __str__(self):
+        return self.name
+    
+
+
+
+class CarGeneration(models.Model):
+    name = models.CharField(max_length=80)
+    car_model = models.ForeignKey('CarModel', on_delete=models.CASCADE, related_name='generations')
+
+
+    class Meta:
+        verbose_name = 'Поколение автомобиля'
+        verbose_name_plural = 'Поколения автомобилей'
+
+    def __str__(self):
+        return self.name
 
 
 class Good(models.Model):

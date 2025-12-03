@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 from datetime import timedelta
 
@@ -90,8 +90,13 @@ WSGI_APPLICATION = 'AutoShop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+		'NAME': os.environ.get('POSTGRES_DB', 'autoshop_db'),
+		'USER': os.environ.get('POSTGRES_USER', 'autoshop_user'),
+		'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'autoshop_password'),
+		'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),
+		'PORT': os.environ.get('POSTGRES_PORT', '5432')
+		
     }
 }
 
